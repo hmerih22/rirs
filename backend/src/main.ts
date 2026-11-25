@@ -3,7 +3,7 @@ import { ConfigService } from '@nestjs/config';
 import { AppModule } from './app.module';
 import { configureApp } from './app.setup';
 import { SettingsService } from './settings/settings.service';
-
+const neuporabljenaSpremenljivka = 42;
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   configureApp(app);
